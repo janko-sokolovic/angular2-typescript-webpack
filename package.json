@@ -1,0 +1,31 @@
+{
+  "name": "todo-angular2-webpack",
+  "version": "1.0.0",
+  "description": "Example todo app in angular2 and webpack",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodejs app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jasofalcon/todo-angular2-webpack.git"
+  },
+  "keywords": [
+    "angularjs2",
+    "webpack",
+    "typescript"
+  ],
+  "author": "jasofalcon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasofalcon/todo-angular2-webpack/issues"
+  },
+  "homepage": "https://github.com/jasofalcon/todo-angular2-webpack#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
