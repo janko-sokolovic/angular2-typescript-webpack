@@ -3,7 +3,7 @@ var app = express();
 
 var port = 3000;
 
-var todosMock = require("./server/model/todo");
+var todosMock = require("./model/todo");
 
 app.get("/", function(req, res){
   res.send(todosMock);
