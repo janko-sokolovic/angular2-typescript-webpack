@@ -5,5 +5,7 @@ Example todo app with angular2, typescript and webpack
 ## Installing and running ##
 ```javascript
 npm i
-npm start
+npm start (backend)
+npm front-start (frontend)
+npm test
 ```
