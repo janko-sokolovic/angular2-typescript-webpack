@@ -6,6 +6,7 @@ Example todo app with angular2, typescript and webpack
 ```javascript
 npm i
 npm start (backend)
-npm front-start (frontend)
+npm run front-start (frontend)
+npm run build (build for production)
 npm test
 ```
