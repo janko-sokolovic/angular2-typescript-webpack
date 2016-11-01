@@ -19,3 +19,5 @@ docker build -t angular2-typescript-webpack .
 docker images (find the id of image)
 docker run -p 80:80 -it [image id]
 ```
+
+### Open localhost in your browser ###
