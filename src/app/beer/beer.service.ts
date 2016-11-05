@@ -1,22 +1,15 @@
-import { Beer } from "./beer.model";
-import { Http } from '@angular/http';
+import { Injectable } from "@angular/core";
 
-export interface IBeerService {
-    getBeers(): Beer[];
-}
+import { Beer } from "./beer";
+import { BEERS } from "./mock-beers";
 
-export class BeerService implements IBeerService {
+@Injectable()
+export class BeerService {
 
     private beers: Beer[] = [];
-
-    // Mock data impl
+    // Mock data
     constructor() {
-
-        this.beers = [
-            new Beer("Guiness", 0.5),
-            new Beer("Paulaner", 0.4),
-            new Beer("Heineken", 0.4)
-        ];
+        this.beers = BEERS;
     }
 
     getBeers(): Beer[] {

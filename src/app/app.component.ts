@@ -1,13 +1,22 @@
-import { Component, Injectable, Inject } from '@angular/core';
-import './app.component.scss';
-import {IBeerService, BeerService} from './beer/beer.service';
+import { Component, Injectable } from "@angular/core";
+import { BeerService } from "./beer/beer.service";
+import { Beer } from "./beer/beer";
+import "./app.component.scss";
+
 
 @Component({
-    selector: 'my-app',
-    templateUrl: './app.component.html',
+    selector: "app",
+    templateUrl: "./app.component.html",
     providers: [BeerService]
 })
 
+@Injectable()
 export class AppComponent {
-    
+    beers: Beer[] = [];
+    constructor(private beerService: BeerService) { }
+
+    ngOnInit() {
+        this.beers = this.beerService.getBeers();
+    }
+
 }

@@ -15,6 +15,13 @@ module.exports = {
     },
 
     module: {
+
+        preLoaders: [{
+            test: /\.ts$/,
+            loader: 'tslint',
+            exclude: /(node_modules)/,
+        }],
+
         loaders: [{
             test: /\.ts$/,
             loaders: ['awesome-typescript-loader', 'angular2-template-loader']
@@ -42,9 +49,13 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: ['app', 'vendor', 'polyfills']
         }),
-
         new HtmlWebpackPlugin({
             template: 'src/index.html'
         })
-    ]
+    ],
+    tslint: {
+        emitErrors: true,
+        failOnHint: true,
+        configuration: require('./tslint.json')
+    }
 };

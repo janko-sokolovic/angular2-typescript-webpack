@@ -1,3 +1,6 @@
+var webpackMerge = require('webpack-merge');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var commonConfig = require('./webpack.common.js');
 var helpers = require('./helpers');
 
 module.exports = {
@@ -16,7 +19,9 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html'
-
+      },
+      {
+        test: /\.scss/, loader: 'style!css!sass'
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
