@@ -1,11 +1,11 @@
 import { Component, Input} from "@angular/core";
 import { Beer } from "./beer";
-import "./beer.component.scss"; 
+import "./beer.component.scss";
 
 @Component({
     selector: "beer",
     template: `
-        <div> Beer name: {{beer.name}} | Alcohol: beer.alcohol: {{beer.alcohol}}</div>
+        <div> Beer name: {{beer.name}} | Alcohol: {{beer.alcohol}}</div>
         `
 })
 
