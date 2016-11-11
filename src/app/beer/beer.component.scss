@@ -1,3 +1,47 @@
+$beer-info-height: 40px;
+
 .beer-list {
-  list-style-type: none;
+    list-style-type: none;
+}
+
+.box {
+    width: 325px;
+    height: 300px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #AAA;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .beer-info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0, .7);
+        height: $beer-info-height;
+        z-index: 1;
+
+        .beer-alc-level,
+        .beer-name {
+            line-height: $beer-info-height;
+            font-weight: normal;
+        }
+
+        .beer-name {
+          float: left;
+          margin-left:15px;
+        }
+
+        .beer-alc-level {
+          float:right;
+          margin-right:15px;
+        }
+    }
+
+    .beer-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }

@@ -1,6 +1,6 @@
 
 export class Beer {
-    constructor(private name: string, private alcohol: number) { }
+    constructor(private name: string, private alcohol: number, private imageUrl: string) { }
 
     getName(): string {
         return this.name;
@@ -8,5 +8,9 @@ export class Beer {
 
     getAlcohol(): number {
         return this.alcohol;
+    }
+
+    getImageUrl(): string {
+      return this.imageUrl;
     }
 }
