@@ -1,6 +1,6 @@
 <main>
     <h1 class="title">Beers</h1>
     <div class="list-container">
-      <beer *ngFor="let beer of beers" [beer]="beer"></beer>
+      <beer *ngFor="let beer of beers | filter : 'name' : ''" [beer]="beer"></beer>
     </div>
 </main>
