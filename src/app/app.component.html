@@ -1,6 +1,7 @@
 <main>
     <h1 class="title">Beers</h1>
     <div class="list-container">
-      <beer *ngFor="let beer of beers | filter : 'name' : ''" [beer]="beer"></beer>
+        <input type="text" [(ngModel)]="searchInput" class="search-input" placeholder="Search..." />
+        <beer *ngFor="let beer of beers | filter : 'name' : searchInput" [beer]="beer"></beer>
     </div>
 </main>

@@ -1,4 +1,5 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300');
+$page-size: 1035px;
 
 .main {
     padding: 1em;
@@ -7,8 +8,22 @@
     margin-top: 50px;
     display: block;
 
+    .search-input {
+        width: 100%;
+        padding: 5px;
+        color: #FFF;
+        background: transparent;
+        font-weight: 200;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #5384FF;
+        font-size: 1.5em;
+        padding-left: 5px;
+        margin: 10px;
+    }
+
     .list-container {
-        width: 1045px;
+        width: $page-size;
         margin: 0 auto;
     }
 }
@@ -21,7 +36,7 @@ body {
 }
 
 .title {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 * {

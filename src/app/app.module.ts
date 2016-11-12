@@ -3,10 +3,11 @@ import { BrowserModule }  from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { BeerComponent } from "./beer/beer.component";
 import { FilterPipe } from "./filter.pipe";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   declarations: [
     AppComponent, BeerComponent, FilterPipe
