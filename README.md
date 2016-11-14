@@ -1,5 +1,15 @@
 # Simple app using angular2, typescript, webpack and docker
 
+#Stack used#
+* Angular 2
+* Typescript
+* Webpack
+* Docker
+* TsLint
+* Karma
+* Jasmine
+* Sass
+
 
 # Installing and running on local #
 ```javascript
