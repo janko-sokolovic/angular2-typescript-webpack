@@ -6,17 +6,19 @@ import { Input } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 
 describe("App", () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [FormsModule],
-      declarations: [AppComponent, BeerComponent, FilterPipe]});
-  });
-  it ("should work", () => {
-    let fixture = TestBed.createComponent(AppComponent);
-    expect(fixture.componentInstance instanceof AppComponent).toBe(true, "should create AppComponent");
-  });
-  it ("should show input field", () => {
-    let fixture = TestBed.createComponent(AppComponent);
-    expect(fixture.componentInstance instanceof AppComponent).toBe(true, "should create AppComponent");
-  });
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            imports: [FormsModule],
+            declarations: [AppComponent, BeerComponent, FilterPipe]
+        });
+    });
+    it("should work", () => {
+        let fixture = TestBed.createComponent(AppComponent);
+        expect(fixture.componentInstance instanceof AppComponent).toBe(true, "should create AppComponent");
+    });
+    it("should show input field", () => {
+        let fixture = TestBed.createComponent(AppComponent);
+        // console.log(fixture);
+        expect(fixture.componentInstance instanceof AppComponent).toBe(true, "should create AppComponent");
+    });
 });
